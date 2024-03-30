@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/icon_cat_question"
+        android:layout_gravity="center"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        app:queryHint="Seach by name"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/reViewSearch"/>
+</LinearLayout>
